@@ -272,7 +272,7 @@
         
     // AJAX MailChimp
     $(".newsletter-form").ajaxChimp({
-        url: "https://hibootstrap.us20.list-manage.com/subscribe/post?u=60e1ffe2e8a68ce1204cd39a5&amp;id=42d6d188d9", // Your url MailChimp
+        url: "https://HireFire.us20.list-manage.com/subscribe/post?u=60e1ffe2e8a68ce1204cd39a5&amp;id=42d6d188d9", // Your url MailChimp
         callback: callbackFunction
     });
 
@@ -304,13 +304,13 @@
 
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
-    localStorage.setItem('zoben_theme', themeName);
+    localStorage.setItem('HireFire_theme', themeName);
     document.documentElement.className = themeName;
 }
 
 // function to toggle between light and dark theme
 function toggleTheme() {
-    if (localStorage.getItem('zoben_theme') === 'theme-dark') {
+    if (localStorage.getItem('HireFire_theme') === 'theme-dark') {
         setTheme('theme-light');
     } else {
         setTheme('theme-dark');
@@ -319,7 +319,7 @@ function toggleTheme() {
 
 // Immediately invoked function to set the theme on initial load
 (function () {
-    if (localStorage.getItem('zoben_theme') === 'theme-dark') {
+    if (localStorage.getItem('HireFire_theme') === 'theme-dark') {
         setTheme('theme-dark');
         document.getElementById('slider').checked = false;
     } else {
